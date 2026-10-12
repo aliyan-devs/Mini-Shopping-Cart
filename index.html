@@ -9,6 +9,23 @@
       content="Discover thoughtful everyday finds at Nova Market."
     />
     <title>Nova Market — Thoughtful finds, every day</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f6f5f1;
+      }
+      #root:empty::before {
+        content: "Nova Market could not load. In the repository, open Settings > Pages and set the source to GitHub Actions.";
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        padding: 2rem;
+        box-sizing: border-box;
+        color: #202721;
+        font: 16px/1.6 sans-serif;
+        text-align: center;
+      }
+    </style>
     <link rel="preconnect" href="https://fakestoreapi.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

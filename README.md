@@ -18,6 +18,6 @@ npm run preview
 
 ## Deploy
 
-Pushing to `main` runs the GitHub Actions workflow in `.github/workflows/deploy.yml`. It builds the site and deploys the generated `dist` directory to GitHub Pages.
+In the repository, open **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. Pushing to `main` then runs the workflow in `.github/workflows/deploy.yml`, which builds the site and deploys the generated `dist` directory.
 
 The Vite base path is derived from the GitHub repository name, and hash-based routing keeps store pages accessible when opened or refreshed on GitHub Pages.
